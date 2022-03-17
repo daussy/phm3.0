@@ -1,4 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# 配置git忽略
+
+# /.idea 
+# 目前没有这个文件
 
 # dependencies
 /node_modules
