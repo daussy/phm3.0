@@ -1,0 +1,44 @@
+@import '../../index.scss';
+
+.Gradient_line{
+    background-image: -webkit-linear-gradient(to right , rgba(10,69,112,0),rgba(10,69,112,1));
+    background-image: -o-linear-gradient(to right , rgba(10,69,112,0),rgba(10,69,112,1));
+    background-image: -moz-linear-gradient(to right , rgba(10,69,112,0),rgba(10,69,112,1));
+    background-image: linear-gradient(to right , rgba(10,69,112,0),rgba(10,69,112,1));
+    position: relative;
+    height: 17px;
+    width: 520px;
+    z-index: 20;
+    .quadrilateral_1,.quadrilateral_2,.quadrilateral_3,.quadrilateral_4{
+        position: absolute;
+        background-color: $_bgc;
+        width: 9px;
+        height: 17px;
+        transform: skewX(-47.729deg);
+    }
+    .quadrilateral_4{
+        right: 17px;
+        top: 0;
+    }
+    .quadrilateral_3{
+        right: 34px;
+        top: 0;
+    }
+    .quadrilateral_2{
+        right: 51px;
+        top: 0;
+    }
+    .quadrilateral_1{
+        right: 68px;
+        width: 18px;
+        top: 0;
+    }
+    .gradient_line_tri{
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-left: 0 solid transparent;
+        border-top: 17px solid transparent;
+        border-right: 18.7px solid $_bgc;
+    }
+}

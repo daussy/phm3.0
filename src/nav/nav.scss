@@ -1,0 +1,321 @@
+@import '../index.scss';
+$_title_bgc:rgb(9,22,47);
+.nav{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .left_gradient_line{
+        position: absolute;
+        left: 0px;
+        top: 29px;
+    }
+    .right_gradient_line{
+        position: absolute;
+        right: 0px;
+        top: 29px;
+        transform: rotateY(180deg);
+    }
+    .center_line{
+        height: 2px;
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        background-color: $_title_bgc;
+        align-items: center;
+        .left_line{
+            .left_line_1{
+                height: 1px;
+                flex: 1 1 auto;
+                background-color: $_title_bgc;
+                width: 122px;
+            }
+            .left_line_2{
+                height: 1px;
+                flex: 1 1 auto;
+                background-color: $_title_bgc;
+            }
+        }
+    }
+    .title_container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            .title_center{
+                height: 80px;
+                // width: 614px;
+                background-color: $_title_bgc;
+                border-bottom:2px solid $_main_c;
+                border-top: 2px solid $_main_c;
+                width:526px;
+                z-index: 990;
+                p{
+                    line-height: 74px;
+                    color: $_main_c;
+                    font-size: 2rem;
+                    text-align:center;
+                }
+            }
+            .title_left_tri{
+                position: relative;
+                .title_left{
+                    // left: 20px;
+                    position: absolute;
+                    z-index: 991;
+                    left: -44px;
+                    top: -40px;
+                    border-top: 40px solid  transparent;
+                    border-right: 44px solid $_main_c;
+                    border-bottom: 40px solid transparent;
+                    border-left: 0px solid transparent;
+                }
+                .title_left_2{
+                    z-index: 999;
+                    position: absolute;
+                    // background-color: rgb(9,22,47);
+                    left: -44px;
+                    top: -39px;
+                    width: 0px;
+                    height: 0px;
+                    margin-left: 2px;
+                    border-top: 39px solid  transparent;
+                    border-right: 44px solid $_title_bgc;
+                    border-bottom: 39px solid transparent;
+                    border-left: 0px solid transparent;
+                }
+                .title_left_3{
+                    z-index: 1000;
+                    position: absolute;
+                    // background-color: rgb(9,22,47);
+                    left: -30px;
+                    top: -12px;
+                    width: 0px;
+                    height: 0px;
+                    margin-left: 2px;
+                    border-top: 12px solid  transparent;
+                    border-right: 13px solid $_main_c;
+                    border-bottom: 12px solid transparent;
+                    border-left: 0px solid transparent;
+                }
+                .title_left_4{
+                    z-index: 1001;
+                    position: absolute;
+                    // background-color: rgb(9,22,47);
+                    left: -28px;
+                    top: -12px;
+                    width: 0px;
+                    height: 0px;
+                    margin-left: 2px;
+                    border-top: 12px solid  transparent;
+                    border-right: 13px solid $_title_bgc;
+                    border-bottom: 12px solid transparent;
+                    border-left: 0px solid transparent;
+                }
+            }
+            .title_right_tri{
+                position: relative;
+                .title_right{
+                    // left: 20px;
+                    position: absolute;
+                    z-index: 991;
+                    // left: 44px;
+                    top: -40px;
+                    width: 0;
+                    height: 0;
+                    border-top: 40px solid  transparent;
+                    border-left: 44px solid $_main_c;
+                    border-bottom: 40px solid transparent;
+                    border-right: 0px solid transparent;
+                }
+                .title_right_2{
+                    z-index: 999;
+                    position: absolute;
+                    // background-color: rgb(9,22,47);
+               
+                    left: -2px;
+                    top: -39px;
+                    width: 0px;
+                    height: 0px;
+                    margin-right: 2px;
+                    border-top: 39px solid  transparent;
+                    border-left: 44px solid $_title_bgc;
+                    border-bottom: 39px solid transparent;
+                    border-right: 0px solid transparent;
+                }
+                .title_right_3{
+                    z-index: 1000;
+                    position: absolute;
+                    // background-color: rgb(9,22,47);
+                    right: -30px;
+                    top: -12px;
+                    width: 0px;
+                    height: 0px;
+                    margin-right: 2px;
+                    border-top: 12px solid  transparent;
+                    border-left: 13px solid $_main_c;
+                    border-bottom: 12px solid transparent;
+                    border-right: 0px solid transparent;
+                }
+                .title_right_4{
+                    z-index: 1001;
+                    position: absolute;
+                    // background-color: rgb(9,22,47);
+                    right: -28px;
+                    top: -12px;
+                    width: 0px;
+                    height: 0px;
+                    margin-right: 2px;
+                    border-top: 12px solid  transparent;
+                    border-left: 13px solid $_title_bgc;
+                    border-bottom: 12px solid transparent;
+                    border-right: 0px solid transparent;
+                }
+            }
+           
+        }
+      
+        .title_bcg{
+            height: 50px;
+            width: 730px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // float: left;
+            position: absolute;
+            // transform: ;
+            .title_left_tri{
+                position: relative;
+                .title_left{
+                    // left: 20px;
+                    position: absolute;
+                    z-index: 991;
+                    left: -30px;
+                    top: -25px;
+                    border-top: 25px solid  transparent;
+                    border-right: 30px solid $_main_c;
+                    border-bottom: 25px solid transparent;
+                    border-left: 0px solid transparent;
+                }
+                .title_left_2{
+                    z-index: 999;
+                    position: absolute;
+                    // background-color: rgb(9,22,47);
+                    left: -30px;
+                    top: -24px;
+                    width: 0px;
+                    height: 0px;
+                    margin-left: 2px;
+                    border-top: 24px solid  transparent;
+                    border-right: 30px solid $_title_bgc;
+                    border-bottom: 24px solid transparent;
+                    border-left: 0px solid transparent;
+                }
+                .title_left_3{
+                    z-index: 1000;
+                    position: absolute;
+                    // background-color: rgb(9,22,47);
+                    left: -20px;
+                    top: -12px;
+                    width: 0px;
+                    height: 0px;
+                    margin-left: 2px;
+                    border-top: 12px solid  transparent;
+                    border-right: 13px solid $_main_c;
+                    border-bottom: 12px solid transparent;
+                    border-left: 0px solid transparent;
+                }
+                .title_left_4{
+                    z-index: 1001;
+                    position: absolute;
+                    // background-color: rgb(9,22,47);
+                    left: -18px;
+                    top: -12px;
+                    width: 0px;
+                    height: 0px;
+                    margin-left: 2px;
+                    border-top: 12px solid  transparent;
+                    border-right: 13px solid $_title_bgc;
+                    border-bottom: 12px solid transparent;
+                    border-left: 0px solid transparent;
+                }
+            }
+            .title_right_tri{
+                position: relative;
+                .title_right{
+                    // left: 20px;
+                    position: absolute;
+                    z-index: 991;
+                    // left: 44px;
+                    top: -25px;
+                    width: 0;
+                    height: 0;
+                    border-top: 25px solid  transparent;
+                    border-left: 30px solid $_main_c;
+                    border-bottom: 25px solid transparent;
+                    border-right: 0px solid transparent;
+                }
+                .title_right_2{
+                    z-index: 999;
+                    position: absolute;
+                    // background-color: rgb(9,22,47);
+               
+                    left: -2px;
+                    top: -24px;
+                    width: 0px;
+                    height: 0px;
+                    margin-right: 2px;
+                    border-top: 24px solid  transparent;
+                    border-left: 30px solid $_title_bgc;
+                    border-bottom: 24px solid transparent;
+                    border-right: 0px solid transparent;
+                }
+                .title_right_3{
+                    z-index: 1000;
+                    position: absolute;
+                    // background-color: rgb(9,22,47);
+                    right: -20px;
+                    top: -12px;
+                    width: 0px;
+                    height: 0px;
+                    margin-right: 2px;
+                    border-top: 12px solid  transparent;
+                    border-left: 13px solid $_main_c;
+                    border-bottom: 12px solid transparent;
+                    border-right: 0px solid transparent;
+                }
+                .title_right_4{
+                    z-index: 1001;
+                    position: absolute;
+                    // background-color: rgb(9,22,47);
+                    right: -18px;
+                    top: -12px;
+                    width: 0px;
+                    height: 0px;
+                    margin-right: 2px;
+                    border-top: 12px solid  transparent;
+                    border-left: 13px solid $_title_bgc;
+                    border-bottom: 12px solid transparent;
+                    border-right: 0px solid transparent;
+                }
+            }
+            .title_center{
+                background-color: $_title_bgc;
+                height: 50px;
+                width: 680px;
+                z-index: 5;
+                border: 1px solid $_main_c;
+            }
+        }
+    }
+}

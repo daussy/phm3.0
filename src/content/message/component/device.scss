@@ -1,0 +1,21 @@
+@import '../.././index.scss';
+.device_message{
+      padding-left:40px;
+      .device_title{
+          span {    
+            font-size: 18px;
+            font-weight: normal;
+            font-style: normal;
+            color: #fff;
+            float: left;
+            font-family: Harrington;   
+            padding-left: 5px; 
+          }
+         .device_content{
+            font-size: 24px;
+            font-weight: normal;
+            font-style: normal;
+            color: #129bff;
+          }
+     }
+  }
