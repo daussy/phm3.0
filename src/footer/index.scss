@@ -1,0 +1,27 @@
+@import '../index.scss';
+
+.footer{
+    width: 100%;
+    height: 25px;
+    // border: 1px solid $_main_c;
+    position: relative;
+    .left_footer{
+        .left_gradient_line{
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            // transform: rotateY(180deg);
+            transform: rotateX(180deg);
+
+        }
+    }
+    .right_footer{
+        .right_gradient_line{
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            // transform: rotateX(0deg);
+            transform: scale(-1,-1);
+        }
+    }
+}
